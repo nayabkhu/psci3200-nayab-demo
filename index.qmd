@@ -1,11 +1,51 @@
 ---
-title: "psci3200-nayab-demo"
+title: "PSCI 3200: Indian Judge Reform"
 ---
 
-This is a Quarto website.
+# Data
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+1.  Variable 1: Difference in Acquittal Rate for Female and Male Defendants
 
-```{r}
-1 + 2
-```
+    -   Variable Creation: Cases were coded for acquittals and aggregated to the state level to generate the percent of cases which resulted in acquittals for both female and male defendants. The female acquittal rate was then subtracted from the male acquittal rate in order to create a difference in acquittal rate variable. The variable is negative if there was a greater male acquittal rate, and negative if there was a greater female acquittal rate. 
+
+    -   Source: [Development Data Lab Judicial Data Portal](https://www.devdatalab.org/judicial-data)
+
+    -   Unit: Difference in Rate 
+
+    -   Level of Analysis: State - The final, cleaned dataset includes acquittal rate data from 28 states and 1 union territory in India. 4 Union Territories were excluded from the analysis, because they either did not have sufficient GDP panel data (Diu and Daman, Dadra Nagar Haveli, and Ladakh) available, or due to ongoing boundary conflict (Jammu and Kashmir).
+
+    -   Sample: This variable was generated from 81 million district court cases from 2010 - 2018, which the original researchers constructed by scraping case records from an online repository ([Indian e-Courts platform](https://districts.ecourts.gov.in/)) covering 7000+ district courts in India. The original e-courts data includes essential dates, petitioner and respondent names, the relevant legal statues, and the final disposition. The original researchers than used a Long Short-Term Memory model in order to assign male/female indicators to the cases based on the names, which were then anonymized.  
+
+2.  Variable 2: Difference in Dismissal Rate for Female and Male Defendants 
+
+    -   Variable Creation: Cases were coded for dismissals and aggregated to the state level to generate the percent of cases which resulted in dismissals for both female and male defendants. The female dismissal rate was then subtracted from the male dismissal rate in order to create a difference in dismissal rate variable. The variable is negative if there was a greater male dismissal rate, and negative if there was a greater female dismissal rate.
+
+    -   Source: [Development Data Lab Judicial Data Portal](https://www.devdatalab.org/judicial-data)
+
+    -   Unit: Difference in Rate 
+
+    -   Level of Analysis: State - The final, cleaned dataset includes acquittal rate data from 28 states and 1 union territory in India. 4 Union Territories were excluded from the analysis, because they either did not have sufficient GDP panel data (Diu and Daman, Dadra Nagar Haveli, and Ladakh) available, or due to ongoing boundary conflict (Jammu and Kashmir).
+
+    -   Sample: This variable was generated from 81 million district court cases from 2010 - 2018, which the original researchers constructed by scraping case records from an online repository ([Indian e-Courts platform](https://districts.ecourts.gov.in/)) covering 7000+ district courts in India. The original e-courts data includes essential dates, petitioner and respondent names, the relevant legal statues, and the final disposition. The original researchers than used a Long Short-Term Memory model in order to assign male/female indicators to the cases based on the names, which were then anonymized.  
+
+3.  Variable 3: Difference in Conviction Rate for Female and Male Defendants 
+
+    -   Variable Creation: Cases were coded for convictions and aggregated to the state level to generate the percent of cases which resulted in convictions for both female and male defendants. The female conviction rate was then subtracted from the male conviction rate in order to create a difference in conviction rate variable. The variable is negative if there was a greater male conviction rate, and negative if there was a greater female conviction rate. 
+
+    -   Source: [Development Data Lab Judicial Data Portal](https://www.devdatalab.org/judicial-data)
+
+    -   Unit: Difference in Rate 
+
+    -   Level of Analysis: State - The final, cleaned dataset includes acquittal rate data from 28 states and 1 union territory in India. 4 Union Territories were excluded from the analysis, because they either did not have sufficient GDP panel data (Diu and Daman, Dadra Nagar Haveli, and Ladakh) available, or due to ongoing boundary conflict (Jammu and Kashmir).
+
+    -   Sample: This variable was generated from 81 million district court cases from 2010 - 2018, which the original researchers constructed by scraping case records from an online repository ([Indian e-Courts platform](https://districts.ecourts.gov.in/)) covering 7000+ district courts in India. The original e-courts data includes essential dates, petitioner and respondent names, the relevant legal statues, and the final disposition. The original researchers than used a Long Short-Term Memory model in order to assign male/female indicators to the cases based on the names, which were then anonymized.  
+
+4.  Variable 4: Gross State Domestic Product 
+
+    -   Source: Government of India - Ministry of Statistics and Programme Implementation: [Source](https://mospi.gov.in/data) (File 17) 
+
+    -   Unit: Prices in Crores (10 Million) 
+
+    -   Level of Analysis: State Level 
+
+    -   Sample: Yearly GDP from 2011 - 2023, provided by the national government.
